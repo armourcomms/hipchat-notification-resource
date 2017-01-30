@@ -67,7 +67,7 @@ resources:
     color: green
     from: "Concourse CI"
     message:
-      template: "${PR-TITLE} Build Successful - <a href='${ATC_EXTERNAL_URL}/pipelines/${BUILD_PIPELINE_NAME}/jobs/${BUILD_JOB_NAME}/builds/${BUILD_NAME}'>Build Logs</a>"
+      template: "${PR-TITLE} Build Successful - <a href='${ATC_EXTERNAL_URL}/teams/${BUILD_TEAM_NAME}/pipelines/${BUILD_PIPELINE_NAME}/jobs/${BUILD_JOB_NAME}/builds/${BUILD_NAME}'>Build Logs</a>"
       params:
         PR-TITLE: file://output-directory/pr-title
 ```
